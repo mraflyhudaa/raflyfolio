@@ -4,13 +4,13 @@ export default function SkillSection() {
   return (
     <section
       id='skills'
-      className=' snap-start px-5 sm:px-16 md:px-28 transition-opacity duration-700 py-20 relative w-full h-screen overflow-y-auto z-[1] bg-dark-bg content-center grid grid-cols-1'
+      className=' snap-start px-5 sm:px-16 md:px-28 transition-opacity duration-700 py-20 relative w-full lg:h-screen  z-[1] bg-dark-bg content-center grid grid-cols-1'
     >
       <div className='flex flex-col gap-4 '>
         <h1 className='text-3xl font-semibold text-dark-headline'>
           <span className='font-normal text-dark-secondary'>#</span>About Me
         </h1>
-        <p className='px-6 pb-2 mb-8 leading-relaxed text-justify'>
+        <p className='px-6 pb-2 mb-8 leading-relaxed  md:text-justify'>
           Recent informatics engineer graduate with a foundation in front-end
           development. Proficient in responsive design and web accessibility
           standards. Familiar with popular front-end frameworks such as React. I
@@ -21,7 +21,7 @@ export default function SkillSection() {
         <h1 className='text-3xl font-semibold text-dark-headline'>
           <span className='font-normal text-dark-secondary'>#</span>Tech Stack
         </h1>
-        <ul className='flex flex-wrap items-center gap-4 px-8 pb-2 sm:grid sm:grid-cols-2 lg:grid-cols-4'>
+        <ul className='flex flex-wrap flex-col sm:items-center gap-4 px-8 pb-2  sm:grid sm:grid-cols-2 lg:grid-cols-4'>
           {skillsData.map((skill, index) => (
             <li
               key={index}
