@@ -63,6 +63,8 @@ export default function Footer() {
         className='flex-[2] flex flex-col gap-5'
         name='contact'
         onSubmit={handleSubmit}
+        data-netlify='true'
+        data-netlify-honeypot='bot-field'
       >
         <h1 className='text-3xl font-semibold'>
           <span className='font-normal text-dark-secondary'>#</span>Contact Me!
@@ -76,6 +78,11 @@ export default function Footer() {
             setIsError(false);
           }}
         />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name='bot-field' />
+          </label>
+        </p>
         <input type='hidden' name='form-name' value='name_of_my_form' />
         <input
           value={name}
