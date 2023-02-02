@@ -64,7 +64,6 @@ export default function Footer() {
         name='contact'
         onSubmit={handleSubmit}
         netlify
-        data-netlify='true'
       >
         <h1 className='text-3xl font-semibold'>
           <span className='font-normal text-dark-secondary'>#</span>Contact Me!
