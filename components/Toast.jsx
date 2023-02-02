@@ -2,7 +2,7 @@ export default function Toast({ message, isError, isShow, onExit }) {
   return (
     <div
       id='toast-success'
-      className={`mx-6 sm:ml-6 transition-opacity delay-200 flex items-center w-full p-4  bg-dark-primarybg text-dark-subhead rounded ${
+      className={`mx-6 sm:ml-6 transition-opacity delay-200 flex items-center  p-4  bg-dark-primarybg text-dark-subhead rounded ${
         isShow ? '' : 'hidden'
       }`}
       role='alert'
@@ -46,7 +46,7 @@ export default function Toast({ message, isError, isShow, onExit }) {
       <div className='ml-3 text-sm font-normal '>{message}</div>
       <button
         type='button'
-        className='ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
+        className='ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-6 w-6 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'
         data-dismiss-target='#toast-success'
         aria-label='Close'
         onClick={onExit}
@@ -54,7 +54,7 @@ export default function Toast({ message, isError, isShow, onExit }) {
         <span className='sr-only'>Close</span>
         <svg
           aria-hidden='true'
-          className='w-5 h-5'
+          className='w-3 h-3'
           fill='currentColor'
           viewBox='0 0 20 20'
           xmlns='http://www.w3.org/2000/svg'
