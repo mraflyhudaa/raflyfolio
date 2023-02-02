@@ -63,6 +63,7 @@ export default function Footer() {
         className='flex-[2] flex flex-col gap-5'
         name='contact'
         onSubmit={handleSubmit}
+        netlify
       >
         <h1 className='text-3xl font-semibold'>
           <span className='font-normal text-dark-secondary'>#</span>Contact Me!
