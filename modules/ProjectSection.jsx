@@ -30,12 +30,16 @@ export default function ProjectSection() {
                   <div className='flex gap-2'>
                     <a
                       href={repo}
+                      target='_blank'
+                      rel='noopener noreferrer'
                       className='p-2 bg-dark-secondary hover:bg-opacity-75 transition-colors rounded'
                     >
                       <Github className='w-4 h-4' />
                     </a>
                     <a
                       href={link}
+                      target='_blank'
+                      rel='noopener noreferrer'
                       className='p-2 bg-dark-secondary hover:bg-opacity-75 transition-colors rounded'
                     >
                       <BiLinkExternal />
