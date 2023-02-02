@@ -7,9 +7,9 @@ export default function ProjectSection() {
   return (
     <section
       id='projects'
-      className='snap-start invert px-5 sm:px-16 md:px-28 w-full min-h-screen p-20 relative z-[1] content-center grid grid-cols-1'
+      className='snap-start  px-5 sm:px-16 md:px-28 w-full min-h-screen p-20 relative z-[1] content-center grid grid-cols-1'
     >
-      <div className='pointer-events-none transition-all duration-1000 ease-[cubic-bezier(1,-0.01,0,1)] z-[2]  origin-center w-full h-full backdrop-invert absolute top-0 left-0'></div>
+      <div className='pointer-events-none transition-all duration-1000 ease-[cubic-bezier(1,-0.01,0,1)] z-[2]  origin-center w-full h-full  absolute top-0 left-0'></div>
       <div className='mt-8 z-[1]'>
         <h1 className='text-3xl font-semibold'>
           <span className='font-normal text-dark-secondary'>#</span>Projects
@@ -32,7 +32,7 @@ export default function ProjectSection() {
                       href={repo}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='p-2 bg-dark-secondary hover:bg-opacity-75 transition-colors rounded'
+                      className='p-2 bg-dark-secondary hover:bg-opacity-75 max-h-8 sm:max-h-fit transition-colors rounded'
                     >
                       <Github className='w-4 h-4' />
                     </a>
@@ -40,7 +40,7 @@ export default function ProjectSection() {
                       href={link}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='p-2 bg-dark-secondary hover:bg-opacity-75 transition-colors rounded'
+                      className='p-2 bg-dark-secondary hover:bg-opacity-75 max-h-8 sm:max-h-fit transition-colors rounded'
                     >
                       <BiLinkExternal />
                     </a>
