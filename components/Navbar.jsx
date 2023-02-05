@@ -19,9 +19,9 @@ export default function Navbar() {
     <nav
       className={classNames(
         scrollPosition > 600
-          ? 'backdrop-blur-md bg-dark-primarybg/60 border-dark-secondary'
+          ? 'backdrop-blur-md bg-dark-primarybg/60 border-dark-secondary py-3'
           : 'backdrop-blur-none bg-dark-primarybg border-dark-primarybg py-12',
-        'z-10 fixed top-0 left-0 w-full py-3 px-5 sm:px-16 md:px-28 min-h-[80px] flex items-center justify-between transition-all duration-700 delay-100  border-b'
+        'z-10 fixed top-0 left-0 w-full px-5 sm:px-16 md:px-28 min-h-[80px] flex items-center justify-between transition-all duration-700 delay-100  border-b'
       )}
     >
       <h1 className='text-xl sm:text-2xl'>
