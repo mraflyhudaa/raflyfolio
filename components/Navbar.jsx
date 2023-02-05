@@ -1,11 +1,33 @@
+import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { useState } from 'react';
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ');
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  const scrollPosition = useScrollPosition();
+
   return (
-    <nav className='z-10 fixed top-0 left-0 w-full py-3 px-5 sm:px-16 md:px-28 min-h-[80px] flex items-center justify-between transition-all duration-500 delay-500 bg-dark-primarybg '>
+    <nav
+      className={classNames(
+        scrollPosition > 600
+          ? 'backdrop-blur-md bg-dark-primarybg/60 border-dark-secondary'
+          : 'backdrop-blur-none bg-dark-primarybg border-dark-primarybg py-12',
+        'z-10 fixed top-0 left-0 w-full py-3 px-5 sm:px-16 md:px-28 min-h-[80px] flex items-center justify-between transition-all duration-700 delay-100  border-b'
+      )}
+    >
       <h1 className='text-xl sm:text-2xl'>
-        <a href='#hero'>Muhammad Rafly Huda</a>
+        <span onClick={topFunction} className='cursor-pointer'>
+          Muhammad Rafly Huda
+        </span>
       </h1>
       <ul
         onClick={() => setShow(false)}
@@ -14,12 +36,18 @@ export default function Navbar() {
         } transition-all duration-500 text-2xl md:text-base bg-dark-primarybg w-full h-screen md:w-auto md:h-auto md:bg-transparent md:static flex flex-col md:flex-row items-center justify-center gap-8`}
       >
         <li>
-          <a href='#skills' className='rounded navlink'>
+          <a
+            href='#skills'
+            className='rounded hover:bg-dark-headline hover:text-dark-primarybg px-2 transition-colors'
+          >
             Skills
           </a>
         </li>
         <li>
-          <a href='#projects' className='rounded navlink'>
+          <a
+            href='#projects'
+            className='rounded hover:bg-dark-headline  hover:text-dark-primarybg px-2 transition-colors'
+          >
             Projects
           </a>
         </li>
