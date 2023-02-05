@@ -30,7 +30,7 @@ export default function HeroSection() {
             target='_blank'
             rel='noreferrer'
             className='px-6 py-3 text-lg rounded w-max navbutton ring ring-inset ring-dark-primary'
-            href='https://drive.google.com/file/d/1M2gL3Ag1FsHxvRHlSGc7NqW8VjdxIAhW/view?usp=share_link'
+            href='https://drive.google.com/file/d/1Prglo9bvuN8UKp9I_3Z4cNOI6PxKRXcZ/view?usp=share_link'
           >
             View Resume
           </a>
