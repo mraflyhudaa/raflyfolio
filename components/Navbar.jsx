@@ -20,7 +20,7 @@ export default function Navbar() {
       className={classNames(
         scrollPosition > 600
           ? 'backdrop-blur-md bg-dark-primarybg/60 border-dark-secondary py-3'
-          : 'backdrop-blur-none bg-dark-primarybg border-dark-primarybg py-12',
+          : 'backdrop-blur-none bg-dark-primarybg border-dark-primarybg py-3 sm:py-12',
         'z-10 fixed top-0 left-0 w-full px-5 sm:px-16 md:px-28 min-h-[80px] flex items-center justify-between transition-all duration-700 delay-100  border-b'
       )}
     >
@@ -38,7 +38,7 @@ export default function Navbar() {
         <li>
           <a
             href='#skills'
-            className='rounded hover:bg-dark-headline hover:text-dark-primarybg px-2 transition-colors'
+            className='px-2 transition-colors rounded hover:bg-dark-headline hover:text-dark-primarybg'
           >
             Skills
           </a>
@@ -46,7 +46,7 @@ export default function Navbar() {
         <li>
           <a
             href='#projects'
-            className='rounded hover:bg-dark-headline  hover:text-dark-primarybg px-2 transition-colors'
+            className='px-2 transition-colors rounded hover:bg-dark-headline hover:text-dark-primarybg'
           >
             Projects
           </a>
