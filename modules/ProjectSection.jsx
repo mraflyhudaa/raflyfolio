@@ -14,10 +14,10 @@ export default function ProjectSection() {
         <h1 className='text-3xl font-semibold'>
           <span className='font-normal text-dark-secondary'>#</span>Projects
         </h1>
-        <ul className='grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 '>
+        <ul className='grid grid-cols-1 gap-6 p-6 lg:grid-cols-2 '>
           {projects.map(({ image, title, description, repo, link, techs }) => (
-            <li key={title} className='bg-dark-bg overflow-hidden rounded '>
-              <div className='w-full p-6 flex relative flex-col gap-4'>
+            <li key={title} className='overflow-hidden rounded bg-dark-bg '>
+              <div className='relative flex flex-col w-full gap-4 p-6'>
                 <Image
                   src={image}
                   alt={title}
@@ -32,7 +32,7 @@ export default function ProjectSection() {
                       href={repo}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='p-2 bg-dark-secondary hover:bg-opacity-75 max-h-8 sm:max-h-fit transition-colors rounded'
+                      className='p-2 transition-colors rounded bg-dark-secondary hover:bg-opacity-75 max-h-8 sm:max-h-fit'
                     >
                       <Github className='w-4 h-4' />
                     </a>
@@ -40,7 +40,7 @@ export default function ProjectSection() {
                       href={link}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='p-2 bg-dark-secondary hover:bg-opacity-75 max-h-8 sm:max-h-fit transition-colors rounded'
+                      className='p-2 transition-colors rounded bg-dark-secondary hover:bg-opacity-75 max-h-8 sm:max-h-fit'
                     >
                       <BiLinkExternal />
                     </a>
@@ -51,7 +51,7 @@ export default function ProjectSection() {
                   {techs.map((tech) => (
                     <li
                       key={tech}
-                      className='p-2 bg-dark-primary text-sm rounded'
+                      className='p-2 text-sm rounded bg-dark-primary'
                     >
                       {tech}
                     </li>
